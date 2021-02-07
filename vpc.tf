@@ -1,5 +1,5 @@
 /*
-Terraform by Lukasz
+Terraform by Lukasz ->
 */
 
 resource "aws_vpc" "main-vpc" {
