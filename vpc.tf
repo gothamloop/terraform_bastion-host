@@ -231,7 +231,7 @@ resource "aws_security_group" "bastion-sg" {
 
 resource "aws_key_pair" "bastion_key" {
    key_name   = "my-key-pair"
-   public_key = "ssh-rsa xxxx"
+   public_key = file("${path.module}/id_rsa.pub")
 }
 
 output "bastion_public_ip" {
